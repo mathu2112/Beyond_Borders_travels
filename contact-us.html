@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Beyond Borders Travels</title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+  <style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-image: url('background.jpg'); /* Your background image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  .nav-left {
+    padding-right: 330px;
+  }
+
+  .nav-left,
+  .nav-center {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-bar {
+    background-color: #222;
+    color: white;
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-center {
+    display: flex;
+    gap: 20px;
+  }
+
+  .nav-center a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    padding:10px;
+  }
+
+  .nav-center a:hover {
+    text-decoration: underline;
+  }
+
+  .contact-us {
+    color: white;
+    max-width: 700px;
+    margin: 60px auto;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+  }
+
+  .contact-us h2 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .contact-us label {
+    font-size: 16px;
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+  }
+
+  .contact-us input[type="textbox"],
+  .contact-us textarea {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+
+  
+ 
+
+  .contact-us button {
+    background-color: #00aaff;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    display: block;
+    margin-top: 10px;
+    align-items: center;
+    width:100%;
+  }
+
+  .contact-us button:hover {
+    background-color: #008ecc;
+  }
+</style>
+
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <div class="nav-bar">
+    <div class="nav-left">
+      <h3>Beyond Borders Travels</h3>
+    </div>
+
+    <div class="nav-center">
+      <nav>
+      <a href="home.html" target="_blank">Home</a>
+      <a href="about-us.html" target="_blank">About Us</a>
+      <a href="contact-us.html" target="_blank">Contact Us</a>
+      </nav>
+    </div>
+    </div>
+    <div class="contact-us">
+      <h2 style="font-size: 40px; font-weight: bold;">CONTACT US</h2>
+      <form class="details">
+        <label>Name:</label><br>
+        <input type="textbox" placeholder="Enter your name" size="90px;"><br><br>
+
+        <label>Email:</label><br>
+        <input type="textbox" placeholder="Enter your email" size="90px;"><br><br>
+
+        <label>Message:</label><br>
+        <textarea id="message" rows="5" placeholder="Enter message"></textarea><br>
+        <button type="submit">Submit</button>
+
+      </form>
+    </div>

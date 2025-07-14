@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Beyond Borders Travels</title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-image: url('background.jpg'); /* Replace with actual image path */
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
+    }
+
+    .nav-bar {
+      background-color: #222;
+      color: white;
+      padding: 10px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav-left h3 {
+      margin: 0;
+      font-weight: normal;
+      font-size: 20px;
+    }
+
+    .nav-center {
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-center a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 14px;
+      padding:10px;
+    }
+
+    .nav-center a:hover {
+      text-decoration: underline;
+    }
+
+    .search-bar {
+      display: flex;
+      align-items: center;
+      background: white;
+      border-radius: 25px;
+      overflow: hidden;
+      max-width: 400px;
+    }
+
+    .search-input-wrapper {
+      display: flex;
+      align-items: center;
+      padding: 0 10px;
+      gap: 8px;
+      flex-grow: 1;
+    }
+
+    .search-input-wrapper i {
+      color: #999;
+      font-size: 16px;
+    }
+
+    .search-input-wrapper input {
+      border: none;
+      outline: none;
+      font-size: 14px;
+      flex-grow: 1;
+      padding: 6px 0;
+    }
+
+    .search-bar button {
+      border: none;
+      padding: 0 15px;
+      height: 36px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .search-bar button[type="submit"] {
+      background-color: #0077cc;
+      color: white;
+    }
+
+    .search-bar button[type="reset"] {
+      background-color: #999;
+      color: white;
+    }
+
+    /* Layout containers */
+    .nav-left,
+    .nav-center,
+    .nav-right {
+      display: flex;
+      align-items: center;
+    }
+
+    .home {
+      color: white;
+      max-width: 900px;
+      margin: 60px auto;
+      background: rgba(0, 0, 0, 0.5); /* Transparent dark overlay */
+      padding: 30px;
+      border-radius: 10px;
+    }
+
+    .home header h2 {
+      font-size: 28px;
+      margin-bottom: 10px;
+      text-align:center;
+    }
+    .home p {
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    .home strong {
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <div class="nav-bar">
+    <div class="nav-left">
+      <h3>Beyond Borders Travels</h3>
+    </div>
+
+    <div class="nav-center">
+       <nav>
+      <a href="home.html" target="_blank">Home</a>
+      <a href="about-us.html" target="_blank">About Us</a>
+      <a href="contact-us.html" target="_blank">Contact Us</a>
+      </nav>
+    </div>
+
+    <div class="nav-right">
+      <form method="GET" class="search-bar">
+        <div class="search-input-wrapper">
+          <i class="fas fa-search"></i>
+          <input
+            type="search"
+            name="q"
+            placeholder="Enter a destination or keyword"
+            required
+          />
+        </div>
+        <button type="submit">Search</button>
+        <button type="reset">Reset</button>
+      </form>
+    </div>
+    <script src="beyond_borders_travels.js"></script>
+
+  </div>
+
+  <!-- Home Page Content -->
+  <div class="home">
+    <div id="search-results" style="margin: 30px; color: white;"></div>
+
+    <header><h2>Home Page</h2></header><br>
+    <p>
+      <strong>Welcome to Beyond Borders Travels</strong><br><br>
+      At Beyond Borders Travels, we believe that travel is more than just a getaway — it’s a gateway to unforgettable memories, new cultures, and fresh perspectives. Whether you're seeking a peaceful beach escape, a thrilling mountain trek, or a vibrant city adventure, we offer personalized travel experiences designed to match your style and budget.<br><br>
+      With a dedicated team of travel experts, curated holiday packages, and seamless booking support, we make your journey as exciting as the destination itself. From solo trips and family vacations to group tours and honeymoon getaways, we’re here to help you explore the world — one extraordinary trip at a time.<br><br>
+      Start your adventure today and go beyond borders with us.
+    </p>
+  </div>
+</body>
+</html>
